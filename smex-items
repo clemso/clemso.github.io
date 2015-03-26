@@ -1,0 +1,42 @@
+
+;; ----- smex-history -----
+(
+ org-publish
+ blog-publish
+ yas-visit-snippet-file
+ package-list-packages
+ org-table-create
+ org-mode
+ eshell
+)
+
+;; ----- smex-data -----
+(
+ (edebug-defun . 1)
+ (find-function-on-key . 1)
+ (other-window . 1)
+ (arp . 1)
+ (hs-hide-block . 1)
+ (hs-show-block . 1)
+ (eval-expression . 11)
+ (eval-last-sexp . 3)
+ (erc . 1)
+ (yas-visit-snippet-file . 2)
+ (smart-insert-operator . 1)
+ (flycheck-tip-cycle . 2)
+ (company-complete . 2)
+ (run-skewer . 13)
+ (httpd-start . 3)
+ (skewer-mode . 3)
+ (eshell . 6)
+ (elfeed . 3)
+ (skewer-html-mode . 1)
+ (impatient-mode . 1)
+ (find-function . 2)
+ (hallopaul . 1)
+ (org-mode . 1)
+ (org-table-create . 1)
+ (package-list-packages . 1)
+ (org-publish . 5)
+ (blog-publish . 3)
+)
