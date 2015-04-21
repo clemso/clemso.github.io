@@ -5,7 +5,10 @@
 	Version: 1.0
 	License: MIT <http://opensource.org/licenses/MIT>
 	Licensed by: Smashing Media GmbH <http://www.smashingmagazine.com/>
-	Original author: Enrique Ramírez <http://enrique-ramirez.com/>
+    Original author: Enrique Ramírez <http://enrique-ramirez.com/>
+
+    Changes
+    2015: Clemso: Customized Theme for my Org-Export
 */
 
 /* Imports */
@@ -26,6 +29,17 @@ body {
     padding: 0;
     text-align: left;
 }
+
+/* Org Source blocks*/
+pre.src { 
+    background-color: #3F3F3F;
+    color: white;
+}
+span.linenr {
+    color: gray;
+}
+
+
 
 /* Headings */
 h1 {font-size: 2em }
