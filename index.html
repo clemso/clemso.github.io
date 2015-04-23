@@ -64,16 +64,16 @@
             <nav><ul>
                     <li><a href="./category/emacs.html">Emacs</a></li>
 
-                    <li style="float:right;"><a style="border-radius: 0px 5px 5px 0px;"href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"><img src="../static/rss.png" class="" alt="RSS" style="border-radius:10px;"/></a></li>
+                    <li style="float:right;"><a style="border-radius: 0px 5px 5px 0px;"href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"><img src="static/img/rss.png" class="" alt="RSS" style="border-radius:10px;"/></a></li>
             </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./a-new-post-again.html">A new Post again</a></h1>
+                    <h1 class="entry-title"><a href="./emacs-rocks-part-1.html">Emacs Rocks - Part 1</a></h1>
 <footer class="post-info">
-        <!-- <abbr class="published" title="2015-04-22T00:46:00+02:00"> -->
-                <!-- Published: 22.4.2015 -->
+        <!-- <abbr class="published" title="2015-04-23T13:40:00+02:00"> -->
+                <!-- Published: 23.4.2015 -->
         <!-- </abbr> -->
         <!--  -->
 
@@ -82,18 +82,92 @@
 </footer><!-- /.post-info -->
 <div id="content">
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Just a Test</h2>
+<h2 id="sec-1">Einleitung</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-This is some Blar blar bla.  Ultrices vitae, auctor eu augue ut lectus arcu,
-bibendum at varius vel, pharetra vel turpis nunc eget lorem dolor, sed viverra
-ipsum nunc aliquet bibendum enim, facilisis gravida neque convallis! Leo urna,
-molestie at elementum! Enim, sed faucibus turpis in eu mi bibendum neque egestas
-congue quisque egestas diam in. Urna, id volutpat lacus laoreet non curabitur
-gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra
-adipiscing at in tellus. Sed blandit libero volutpat sed cras ornare arcu dui
-vivamus arcu felis, bibendum ut tristique et, egestas quis ipsum suspendisse
-ultrices gravida dictum fusce ut placerat orci!
+Wer sich mit Freier Software beschäftigt, hat vielleicht schon einmal von Emacs
+gehört. Falls nicht, es handelt sich um einen <b>sehr</b> flexiblen Texteditor. So
+flexibel, dass manche ihr Betriebsystem zum Bootloader degradieren, dass nur dazu
+da ist Emacs zu starten.
+</p>
+
+<p>
+Leider ist die Lernkurve relativ steil was es Neulingen oft erschwert einen
+Zugang zu finden. Außerdem gibt es viele alternative Editoren und die meisten
+sind für Einsteiger zugänglicher als Emacs. Aber wie in dieser Artikelreihe
+gezeigt werden soll, zahlt es auf lange Sicht mehr als aus, die Benutzung von
+Emacs zu erlernen.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Motivation</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Besonders für Programmierer gibt es eine Fülle von Angeboten an
+unterschiedlichen Editoren. Oft gibt es sogar Editoren die speziell zur Verwendung
+einer bestimmten Programmiersprache angeboten werden. Der Nachteil ist, dass man
+beim Wechsel zu einer anderen Programmiersprache, eventuell einen anderen Editor
+benutzen muss, da der Support der anderen Sprache in dem verwendeten Editor
+unter Umständen mangelhaft ist.
+</p>
+
+<p>
+Hinzu kommt, dass viele Editoren Tastenkürzel anbieten um bestimmte oft genutzte
+Funktionen schneller ausführen zu können ohne sich immer wieder durch die
+selben Menüs klicken zu müssen. Wenn man Glück hat dann bieten die verschiedenen
+Editoren die man nutzt eine Anpassung dieser Kürzel an, so dass man in
+verschiedenen Editoren die gleichen Tastenkürzel verwenden kann. Dies ist jedoch
+meistens nicht der Fall oder man kann nur bestimmte Funktionen mit Tastenkürzeln
+belegen.
+</p>
+
+<p>
+Weiterhin wäre es doch schön, wenn man dieselben Tastenkürzel die man im Editor
+verwendet auch beim schreiben von Emails oder bei der Eingabe von Befehlen auf
+der Kommandozeile nutzen könnte.
+</p>
+
+<p>
+Neben den Editoren gibt es Programme wie <a href="http://wiki.ubuntuusers.de/autokey">AutoKey</a> welche dem Nutzer die Möglichkeit
+bieten die Ausfühung beliebiger Aktionen am Computer per Tastenkürzel durchzuführen.
+</p>
+
+<p>
+Was wäre wenn es eine Software gäbe, die all diese Probleme adressiert und dazu
+noch <a href="http://www.gnu.org/philosophy/free-sw.html">freie</a> Software ist?
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Emacs to the Rescue</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Emacs ist ein sehr modularer Editor und es gibt für fast jede Programmiersprache
+Pakete, die Emacs um die Unterstützung der Sprache erweitern. Weiterhin gibt es
+Erweiterungen mit denen sich aus Emacs ein Email-Client, IRC-Client und vieles
+anderes machen lässt. Im Prinzip ist Emacs ein großer <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a> der zur Laufzeit
+durch ausführen von Code beliebig verändert werden kann. Das geht soweit, dass
+andere Editoren wie z.B. Vi/Vim in Emacs <a href="http://www.emacswiki.org/emacs/Evil">emuliert</a> werden können, falls man deren
+Funktionalität gerne unter Emacs verwenden möchte.
+</p>
+
+<p>
+Ehe man sich versieht werden Programme wie der Dateimanager, der Terminal
+Emulator, Emailclient, IRC CLient, Git Client, Feedreader und mehr durch Emacs
+ersetzt.
+</p>
+
+<p>
+Die erste öffentliche Version von GNU Emacs erschien bereits im Jahr 1985 und es
+existiert eine große Community, welche die Weiterentwicklung von Emacs
+vorantreibt. Just am 10. April wurde die Version 24.5 von Emacs veröffentlicht.
+Man kann also getrost davon ausgehen, das der Support die eigene Lebenszeit
+überdauert, was bedeutet, dass das Gelernte mit hoher Wahrscheinlichkeit
+ein Leben lang von nutzen bleibt.
 </p>
 </div>
 </div>
@@ -107,41 +181,21 @@ ultrices gravida dictum fusce ut placerat orci!
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="./another-test-post.html" rel="bookmark"
-                           title="Permalink to Another Test Post">Another Test Post</a></h1>
+                    <h1><a href="./emacs-rocks-part-2.html" rel="bookmark"
+                           title="Permalink to Emacs Rocks - Part 2">Emacs Rocks - Part 2</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <!-- <abbr class="published" title="2015-04-22T00:46:00+02:00"> -->
-                <!-- Published: 22.4.2015 -->
+        <!-- <abbr class="published" title="2015-04-23T13:40:00+02:00"> -->
+                <!-- Published: 23.4.2015 -->
         <!-- </abbr> -->
         <!--  -->
 
 <!-- <p>In <a href="./category/emacs.html">Emacs</a>. </p> -->
 
 </footer><!-- /.post-info -->                
-                <!-- <a class="readmore" href="./another-test-post.html">read more</a> -->
-                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="./installation-von-emacs-245-unter-debian.html" rel="bookmark"
-                           title="Permalink to Installation von Emacs 24.5 unter Debian">Installation von Emacs 24.5 unter Debian</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <!-- <abbr class="published" title="2015-04-22T00:46:00+02:00"> -->
-                <!-- Published: 22.4.2015 -->
-        <!-- </abbr> -->
-        <!--  -->
-
-<!-- <p>In <a href="./category/emacs.html">Emacs</a>. </p> -->
-
-</footer><!-- /.post-info -->                
-                <!-- <a class="readmore" href="./installation-von-emacs-245-unter-debian.html">read more</a> -->
+                <!-- <a class="readmore" href="./emacs-rocks-part-2.html">read more</a> -->
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->

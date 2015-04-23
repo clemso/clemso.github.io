@@ -1,265 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Byteweise</title><link href="/" rel="alternate"></link><link href="/feeds/emacs.atom.xml" rel="self"></link><id>/</id><updated>2015-04-22T00:46:00+02:00</updated><entry><title>A new Post again</title><link href="/a-new-post-again.html" rel="alternate"></link><updated>2015-04-22T00:46:00+02:00</updated><author><name></name></author><id>tag:,2015-04-22:a-new-post-again.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Byteweise</title><link href="/" rel="alternate"></link><link href="/feeds/emacs.atom.xml" rel="self"></link><id>/</id><updated>2015-04-23T13:40:00+02:00</updated><entry><title>Emacs Rocks - Part 1</title><link href="/emacs-rocks-part-1.html" rel="alternate"></link><updated>2015-04-23T13:40:00+02:00</updated><author><name></name></author><id>tag:,2015-04-23:emacs-rocks-part-1.html</id><summary type="html">
 &lt;div id="content"&gt;
 &lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;Just a Test&lt;/h2&gt;
+&lt;h2 id="sec-1"&gt;Einleitung&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-1"&gt;
 &lt;p&gt;
-This is some Blar blar bla.  Ultrices vitae, auctor eu augue ut lectus arcu,
-bibendum at varius vel, pharetra vel turpis nunc eget lorem dolor, sed viverra
-ipsum nunc aliquet bibendum enim, facilisis gravida neque convallis! Leo urna,
-molestie at elementum! Enim, sed faucibus turpis in eu mi bibendum neque egestas
-congue quisque egestas diam in. Urna, id volutpat lacus laoreet non curabitur
-gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra
-adipiscing at in tellus. Sed blandit libero volutpat sed cras ornare arcu dui
-vivamus arcu felis, bibendum ut tristique et, egestas quis ipsum suspendisse
-ultrices gravida dictum fusce ut placerat orci!
+Wer sich mit Freier Software beschäftigt, hat vielleicht schon einmal von Emacs
+gehört. Falls nicht, es handelt sich um einen &lt;b&gt;sehr&lt;/b&gt; flexiblen Texteditor. So
+flexibel, dass manche ihr Betriebsystem zum Bootloader degradieren, dass nur dazu
+da ist Emacs zu starten.
 &lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</summary></entry><entry><title>Another Test Post</title><link href="/another-test-post.html" rel="alternate"></link><updated>2015-04-22T00:46:00+02:00</updated><author><name></name></author><id>tag:,2015-04-22:another-test-post.html</id><summary type="html">
-&lt;div id="content"&gt;
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;Heading&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
+
 &lt;p&gt;
-Ultrices vitae, auctor eu augue ut lectus arcu, bibendum at varius vel, pharetra vel turpis nunc eget lorem dolor, sed viverra ipsum nunc aliquet bibendum enim, facilisis gravida neque convallis! Leo urna, molestie at elementum! Enim, sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in. Urna, id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra adipiscing at in tellus. Sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis, bibendum ut tristique et, egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci!
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</summary></entry><entry><title>Installation von Emacs 24.5 unter Debian</title><link href="/installation-von-emacs-245-unter-debian.html" rel="alternate"></link><updated>2015-04-22T00:46:00+02:00</updated><author><name></name></author><id>tag:,2015-04-22:installation-von-emacs-245-unter-debian.html</id><summary type="html">
-&lt;div id="content"&gt;
-&lt;div id="outline-container-sec-1" class="outline-2"&gt;
-&lt;h2 id="sec-1"&gt;Installation&lt;/h2&gt;
-&lt;div class="outline-text-2" id="text-1"&gt;
-&lt;p&gt;
-Hier beschreibe Ich die Installation von Emacs unter Debian.
-post
+Leider ist die Lernkurve relativ steil was es Neulingen oft erschwert einen
+Zugang zu finden. Außerdem gibt es viele alternative Editoren und die meisten
+sind für Einsteiger zugänglicher als Emacs. Aber wie in dieser Artikelreihe
+gezeigt werden soll, zahlt es auf lange Sicht mehr als aus, die Benutzung von
+Emacs zu erlernen.
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
 
 &lt;div id="outline-container-sec-2" class="outline-2"&gt;
-&lt;h2 id="sec-2"&gt;Zum merken&lt;/h2&gt;
+&lt;h2 id="sec-2"&gt;Motivation&lt;/h2&gt;
 &lt;div class="outline-text-2" id="text-2"&gt;
 &lt;p&gt;
-Das &lt;span class="underline"&gt;Aussehen&lt;/span&gt; der &lt;code&gt;Seite&lt;/code&gt; kann &lt;b&gt;man&lt;/b&gt; leicht durch anpassen des Themes im themes
-Ordner erreichen.
+Besonders für Programmierer gibt es eine Fülle von Angeboten an
+unterschiedlichen Editoren. Oft gibt es sogar Editoren die speziell zur Verwendung
+einer bestimmten Programmiersprache angeboten werden. Der Nachteil ist, dass man
+beim Wechsel zu einer anderen Programmiersprache, eventuell einen anderen Editor
+benutzen muss, da der Support der anderen Sprache in dem verwendeten Editor
+unter Umständen mangelhaft ist.
 &lt;/p&gt;
 
 &lt;p&gt;
-&lt;i&gt;Latex&lt;/i&gt; &lt;b&gt;Formeln&lt;/b&gt; werden wie folgt eingebunden(nachdem Mathjax mit im Theme
-aufgenommen wurde) :
-&lt;/p&gt;
-
-\begin{equation}
-a=b+c
-\end{equation}
-
-
-&lt;p&gt;
-Code kann wie folgt mit Zeilen Nummern versehen werden.
-Mit org-store-link und org-insert-link lassen sich Referenzen erstellen.
-&lt;/p&gt;
-&lt;div class="org-src-container"&gt;
-
-&lt;pre class="src src-python"&gt;&lt;span class="linenr"&gt;1: &lt;/span&gt;&lt;span style="color: #5F7F5F;"&gt;# &lt;/span&gt;&lt;span style="color: #7F9F7F;"&gt;comment&lt;/span&gt;
-&lt;span id="coderef-yes" class="coderef-off"&gt;&lt;span class="linenr"&gt;2: &lt;/span&gt;&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;print&lt;/span&gt; &lt;span style="color: #CC9393;"&gt;"yes"&lt;/span&gt;&lt;/span&gt;
-&lt;span class="linenr"&gt;3: &lt;/span&gt;&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;print&lt;/span&gt; &lt;span style="color: #CC9393;"&gt;"no"&lt;/span&gt;
-&lt;span class="linenr"&gt;4: &lt;/span&gt;&lt;span style="color: #F0DFAF; font-weight: bold;"&gt;def&lt;/span&gt; &lt;span style="color: #93E0E3;"&gt;test&lt;/span&gt;():
-&lt;span class="linenr"&gt;5: &lt;/span&gt;    &lt;span style="color: #F0DFAF; font-weight: bold;"&gt;return&lt;/span&gt; klappt
-&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;
-Pharetra vel turpis nunc eget lorem dolor, sed viverra ipsum nunc aliquet
-bibendum enim, facilisis! Sit amet tellus cras adipiscing enim eu turpis egestas
-pretium aenean pharetra, magna ac placerat vestibulum, lectus mauris ultrices
-eros, in cursus turpis! Et netus et malesuada fames ac turpis egestas integer
-eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit
-turpis cursus in hac habitasse platea dictumst quisque sagittis! Parturient
-montes, nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc
-vel risus commodo viverra maecenas accumsan. Dictum varius duis at consectetur
-lorem donec. Eu volutpat odio facilisis mauris sit amet massa vitae tortor
-condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices!
-Pharetra et ultrices neque ornare aenean euismod elementum nisi, quis eleifend
-quam adipiscing vitae proin sagittis, nisl rhoncus mattis rhoncus, urna neque
-viverra justo, nec ultrices dui sapien. Amet, mattis vulputate enim nulla
-aliquet porttitor lacus, luctus accumsan tortor posuere ac ut. Sit amet luctus
-venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim
-praesent elementum facilisis leo, vel fringilla est ullamcorper. Venenatis,
-lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi?
-Tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet
-tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra? Eget
-magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus
-ultricies tristique nulla aliquet enim tortor, at auctor urna nunc id? Lectus
-arcu, bibendum at varius vel, pharetra vel turpis nunc eget lorem dolor, sed
-viverra ipsum nunc aliquet bibendum enim, facilisis gravida neque convallis a
-cras semper. Aliquet sagittis id consectetur purus ut faucibus pulvinar
-elementum integer enim neque, volutpat ac tincidunt vitae, semper quis lectus
-nulla at volutpat diam ut venenatis. Feugiat scelerisque varius morbi enim nunc,
-faucibus a pellentesque! Facilisis sed odio morbi quis commodo odio aenean sed
-adipiscing diam. Nunc pulvinar sapien et ligula ullamcorper malesuada proin
-libero nunc, consequat interdum varius sit amet. Rutrum tellus pellentesque eu
-tincidunt tortor aliquam nulla facilisi cras fermentum, odio eu feugiat pretium,
-nibh ipsum consequat nisl, vel pretium lectus! Blandit volutpat maecenas
-volutpat blandit aliquam etiam erat velit, scelerisque in dictum non,
-consectetur a. Massa massa ultricies mi, quis hendrerit dolor magna eget est
-lorem ipsum dolor! Commodo viverra maecenas accumsan, lacus vel facilisis
-volutpat, est velit egestas dui, id ornare arcu odio ut sem nulla
-pharetra. Consequat semper viverra nam libero justo, laoreet sit amet cursus sit
-amet, dictum sit amet justo donec? Eget gravida cum sociis natoque penatibus et
-magnis dis parturient montes, nascetur ridiculus mus mauris vitae ultricies leo
-integer malesuada nunc vel risus commodo viverra maecenas accumsan, lacus vel
-facilisis? Eu scelerisque felis imperdiet proin! Morbi tristique senectus et
-netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere
-morbi leo urna, molestie at elementum eu, facilisis sed. Amet venenatis urna
-cursus eget nunc scelerisque viverra mauris, in aliquam sem fringilla ut morbi
-tincidunt augue interdum velit euismod in pellentesque massa placerat duis
-ultricies. Ultricies leo integer malesuada nunc vel risus commodo viverra
-maecenas accumsan, lacus vel facilisis volutpat, est! Auctor elit sed vulputate
-mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien
-et ligula ullamcorper malesuada proin libero nunc, consequat
-interdum. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi
-tristique senectus et netus et malesuada fames ac turpis egestas
-maecenas. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae
-congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque! Massa
-placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu
-non! Scelerisque purus semper eget duis at tellus at urna condimentum mattis
-pellentesque id nibh tortor, id aliquet lectus proin nibh. Cursus sit amet,
-dictum sit amet justo donec enim diam, vulputate ut pharetra sit amet, aliquam
-id diam maecenas ultricies mi eget! Nisi lacus, sed viverra tellus in hac
-habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-dignissim cras tincidunt lobortis feugiat vivamus. Facilisi morbi tempus iaculis
-urna, id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim
-convallis aenean et. At quis risus sed vulputate odio ut enim blandit volutpat
-maecenas volutpat blandit aliquam etiam erat velit. Posuere ac ut consequat
-semper viverra nam libero justo, laoreet sit amet cursus sit amet, dictum sit
-amet justo donec enim diam, vulputate ut pharetra sit? Proin sed libero enim,
-sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam
-in arcu cursus euismod. Eu ultrices vitae, auctor eu augue ut lectus arcu,
-bibendum at varius? A, condimentum vitae sapien pellentesque habitant morbi
-tristique senectus et netus et malesuada fames ac turpis egestas sed tempus,
-urna et pharetra pharetra, massa massa ultricies mi, quis. Interdum velit
-laoreet id donec ultrices tincidunt arcu, non sodales neque sodales ut? At
-elementum eu, facilisis sed odio morbi quis commodo. Gravida hendrerit lectus a
-molestie. Sed faucibus turpis in eu mi bibendum neque. Vitae proin sagittis,
-nisl rhoncus mattis rhoncus, urna! Id diam maecenas ultricies mi eget mauris
-pharetra et ultrices neque ornare aenean euismod elementum nisi, quis eleifend
-quam adipiscing vitae proin? Ut eu sem integer vitae justo eget magna fermentum?
-Eget egestas purus viverra accumsan in nisl nisi, scelerisque eu ultrices vitae,
-auctor eu augue ut lectus arcu! Consequat id porta nibh venenatis cras sed felis
-eget velit aliquet sagittis id consectetur purus ut? In nisl nisi, scelerisque
-eu ultrices? Libero justo, laoreet sit amet. Ultricies lacus sed turpis
-tincidunt id aliquet risus feugiat in ante metus, dictum at tempor commodo,
-ullamcorper a lacus vestibulum? Amet tellus cras adipiscing enim eu turpis
-egestas pretium aenean pharetra, magna ac placerat vestibulum, lectus mauris
-ultrices eros, in. Ultrices sagittis orci, a scelerisque purus semper eget duis
-at? Sit amet nisl purus, in. In dictum non, consectetur a erat nam at lectus
-urna duis convallis convallis tellus, id interdum velit laoreet id donec
-ultrices tincidunt arcu, non sodales neque sodales ut.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-Pharetra vel turpis nunc eget lorem dolor, sed viverra ipsum nunc aliquet
-bibendum enim, facilisis! Sit amet tellus cras adipiscing enim eu turpis egestas
-pretium aenean pharetra, magna ac placerat vestibulum, lectus mauris ultrices
-eros, in cursus turpis! Et netus et malesuada fames ac turpis egestas integer
-eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit
-turpis cursus in hac habitasse platea dictumst quisque sagittis! Parturient
-montes, nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc
-vel risus commodo viverra maecenas accumsan. Dictum varius duis at consectetur
-lorem donec. Eu volutpat odio facilisis mauris sit amet massa vitae tortor
-condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices!
-Pharetra et ultrices neque ornare aenean euismod elementum nisi, quis eleifend
-quam adipiscing vitae proin sagittis, nisl rhoncus mattis rhoncus, urna neque
-viverra justo, nec ultrices dui sapien. Amet, mattis vulputate enim nulla
-aliquet porttitor lacus, luctus accumsan tortor posuere ac ut. Sit amet luctus
-venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim
-praesent elementum facilisis leo, vel fringilla est ullamcorper. Venenatis,
-lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent
-elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi?
-Tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet
-tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra? Eget
-magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus
-ultricies tristique nulla aliquet enim tortor, at auctor urna nunc id? Lectus
-arcu, bibendum at varius vel, pharetra vel turpis nunc eget lorem dolor, sed
-viverra ipsum nunc aliquet bibendum enim, facilisis gravida neque convallis a
-cras semper. Aliquet sagittis id consectetur purus ut faucibus pulvinar
-elementum integer enim neque, volutpat ac tincidunt vitae, semper quis lectus
-nulla at volutpat diam ut venenatis. Feugiat scelerisque varius morbi enim nunc,
-faucibus a pellentesque! Facilisis sed odio morbi quis commodo odio aenean sed
-adipiscing diam. Nunc pulvinar sapien et ligula ullamcorper malesuada proin
-libero nunc, consequat interdum varius sit amet. Rutrum tellus pellentesque eu
-tincidunt tortor aliquam nulla facilisi cras fermentum, odio eu feugiat pretium,
-nibh ipsum consequat nisl, vel pretium lectus! Blandit volutpat maecenas
-volutpat blandit aliquam etiam erat velit, scelerisque in dictum non,
-consectetur a. Massa massa ultricies mi, quis hendrerit dolor magna eget est
-lorem ipsum dolor! Commodo viverra maecenas accumsan, lacus vel facilisis
-volutpat, est velit egestas dui, id ornare arcu odio ut sem nulla
-pharetra. Consequat semper viverra nam libero justo, laoreet sit amet cursus sit
-amet, dictum sit amet justo donec? Eget gravida cum sociis natoque penatibus et
-magnis dis parturient montes, nascetur ridiculus mus mauris vitae ultricies leo
-integer malesuada nunc vel risus commodo viverra maecenas accumsan, lacus vel
-facilisis? Eu scelerisque felis imperdiet proin! Morbi tristique senectus et
-netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere
-morbi leo urna, molestie at elementum eu, facilisis sed. Amet venenatis urna
-cursus eget nunc scelerisque viverra mauris, in aliquam sem fringilla ut morbi
-tincidunt augue interdum velit euismod in pellentesque massa placerat duis
-ultricies. Ultricies leo integer malesuada nunc vel risus commodo viverra
-maecenas accumsan, lacus vel facilisis volutpat, est! Auctor elit sed vulputate
-mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien
-et ligula ullamcorper malesuada proin libero nunc, consequat
-interdum. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi
-tristique senectus et netus et malesuada fames ac turpis egestas
-maecenas. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus vitae
-congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque! Massa
-placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in
-ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu
-non! Scelerisque purus semper eget duis at tellus at urna condimentum mattis
-pellentesque id nibh tortor, id aliquet lectus proin nibh. Cursus sit amet,
-dictum sit amet justo donec enim diam, vulputate ut pharetra sit amet, aliquam
-id diam maecenas ultricies mi eget! Nisi lacus, sed viverra tellus in hac
-habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper
-dignissim cras tincidunt lobortis feugiat vivamus. Facilisi morbi tempus iaculis
-urna, id volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim
-convallis aenean et. At quis risus sed vulputate odio ut enim blandit volutpat
-maecenas volutpat blandit aliquam etiam erat velit. Posuere ac ut consequat
-semper viverra nam libero justo, laoreet sit amet cursus sit amet, dictum sit
-amet justo donec enim diam, vulputate ut pharetra sit? Proin sed libero enim,
-sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam
-in arcu cursus euismod. Eu ultrices vitae, auctor eu augue ut lectus arcu,
-bibendum at varius? A, condimentum vitae sapien pellentesque habitant morbi
-tristique senectus et netus et malesuada fames ac turpis egestas sed tempus,
-urna et pharetra pharetra, massa massa ultricies mi, quis. Interdum velit
-laoreet id donec ultrices tincidunt arcu, non sodales neque sodales ut? At
-elementum eu, facilisis sed odio morbi quis commodo. Gravida hendrerit lectus a
-molestie. Sed faucibus turpis in eu mi bibendum neque. Vitae proin sagittis,
-nisl rhoncus mattis rhoncus, urna! Id diam maecenas ultricies mi eget mauris
-pharetra et ultrices neque ornare aenean euismod elementum nisi, quis eleifend
-quam adipiscing vitae proin? Ut eu sem integer vitae justo eget magna fermentum?
-Eget egestas purus viverra accumsan in nisl nisi, scelerisque eu ultrices vitae,
-auctor eu augue ut lectus arcu! Consequat id porta nibh venenatis cras sed felis
-eget velit aliquet sagittis id consectetur purus ut? In nisl nisi, scelerisque
-eu ultrices? Libero justo, laoreet sit amet. Ultricies lacus sed turpis
-tincidunt id aliquet risus feugiat in ante metus, dictum at tempor commodo,
-ullamcorper a lacus vestibulum? Amet tellus cras adipiscing enim eu turpis
-egestas pretium aenean pharetra, magna ac placerat vestibulum, lectus mauris
-ultrices eros, in. Ultrices sagittis orci, a scelerisque purus semper eget duis
-at? Sit amet nisl purus, in. In dictum non, consectetur a erat nam at lectus
-urna duis convallis convallis tellus, id interdum velit laoreet id donec
-ultrices tincidunt arcu, non sodales neque sodales ut.
+Hinzu kommt, dass viele Editoren Tastenkürzel anbieten um bestimmte oft genutzte
+Funktionen schneller ausführen zu können ohne sich immer wieder durch die
+selben Menüs klicken zu müssen. Wenn man Glück hat dann bieten die verschiedenen
+Editoren die man nutzt eine Anpassung dieser Kürzel an, so dass man in
+verschiedenen Editoren die gleichen Tastenkürzel verwenden kann. Dies ist jedoch
+meistens nicht der Fall oder man kann nur bestimmte Funktionen mit Tastenkürzeln
+belegen.
 &lt;/p&gt;
 
 &lt;p&gt;
-Test &lt;a href="#coderef-yes" class="coderef" onmouseover="CodeHighlightOn(this, 'coderef-yes');" onmouseout="CodeHighlightOff(this, 'coderef-yes');"&gt;jump&lt;/a&gt;.
+Weiterhin wäre es doch schön, wenn man dieselben Tastenkürzel die man im Editor
+verwendet auch beim schreiben von Emails oder bei der Eingabe von Befehlen auf
+der Kommandozeile nutzen könnte.
+&lt;/p&gt;
+
+&lt;p&gt;
+Neben den Editoren gibt es Programme wie &lt;a href="http://wiki.ubuntuusers.de/autokey"&gt;AutoKey&lt;/a&gt; welche dem Nutzer die Möglichkeit
+bieten die Ausfühung beliebiger Aktionen am Computer per Tastenkürzel durchzuführen.
+&lt;/p&gt;
+
+&lt;p&gt;
+Was wäre wenn es eine Software gäbe, die all diese Probleme adressiert und dazu
+noch &lt;a href="http://www.gnu.org/philosophy/free-sw.html"&gt;freie&lt;/a&gt; Software ist?
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;div id="outline-container-sec-3" class="outline-2"&gt;
+&lt;h2 id="sec-3"&gt;Emacs to the Rescue&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-3"&gt;
+&lt;p&gt;
+Emacs ist ein sehr modularer Editor und es gibt für fast jede Programmiersprache
+Pakete, die Emacs um die Unterstützung der Sprache erweitern. Weiterhin gibt es
+Erweiterungen mit denen sich aus Emacs ein Email-Client, IRC-Client und vieles
+anderes machen lässt. Im Prinzip ist Emacs ein großer &lt;a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop"&gt;REPL&lt;/a&gt; der zur Laufzeit
+durch ausführen von Code beliebig verändert werden kann. Das geht soweit, dass
+andere Editoren wie z.B. Vi/Vim in Emacs &lt;a href="http://www.emacswiki.org/emacs/Evil"&gt;emuliert&lt;/a&gt; werden können, falls man deren
+Funktionalität gerne unter Emacs verwenden möchte.
+&lt;/p&gt;
+
+&lt;p&gt;
+Ehe man sich versieht werden Programme wie der Dateimanager, der Terminal
+Emulator, Emailclient, IRC CLient, Git Client, Feedreader und mehr durch Emacs
+ersetzt.
+&lt;/p&gt;
+
+&lt;p&gt;
+Die erste öffentliche Version von GNU Emacs erschien bereits im Jahr 1985 und es
+existiert eine große Community, welche die Weiterentwicklung von Emacs
+vorantreibt. Just am 10. April wurde die Version 24.5 von Emacs veröffentlicht.
+Man kann also getrost davon ausgehen, das der Support die eigene Lebenszeit
+überdauert, was bedeutet, dass das Gelernte mit hoher Wahrscheinlichkeit
+ein Leben lang von nutzen bleibt.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</summary></entry><entry><title>Emacs Rocks - Part 2</title><link href="/emacs-rocks-part-2.html" rel="alternate"></link><updated>2015-04-23T13:40:00+02:00</updated><author><name></name></author><id>tag:,2015-04-23:emacs-rocks-part-2.html</id><summary type="html">
+&lt;div id="content"&gt;
+&lt;div id="outline-container-sec-1" class="outline-2"&gt;
+&lt;h2 id="sec-1"&gt;In Bearbeitung&lt;/h2&gt;
+&lt;div class="outline-text-2" id="text-1"&gt;
+&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 </summary></entry></feed>

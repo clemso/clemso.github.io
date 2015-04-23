@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Emacs Rocks</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Byteweise Atom Feed" />
+        <script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+
+        <script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+    </head>
+
+    <body id="index" class="home">
+<a href="http://github.com/clemso/">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+            <h1><a href="./">Byteweise </a></h1>
+            <nav><ul>
+                    <li class="active"><a href="./category/emacs.html">Emacs</a></li>
+
+                    <li style="float:right;"><a style="border-radius: 0px 5px 5px 0px;"href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"><img src="static/img/rss.png" class="" alt="RSS" style="border-radius:10px;"/></a></li>
+            </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./emacs-rocks.html" rel="bookmark"
+           title="Permalink to Emacs Rocks">Emacs Rocks</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <!-- <abbr class="published" title="2015-04-22T13:53:00+02:00"> -->
+                <!-- Published: 22.4.2015 -->
+        <!-- </abbr> -->
+        <!--  -->
+
+<!-- <p>In <a href="./category/emacs.html">Emacs</a>. </p> -->
+
+</footer><!-- /.post-info -->      
+<div id="content">
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Einleitung</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Wer das Freie Software Magazin liest, hat vielleicht schon einmal von Emacs
+gehört. Falls nicht, es handelt sich um einen <b>sehr</b> flexiblen Texteditor. So
+flexibel, dass manche ihr Betriebsystem zum Bootloader degradieren, dass nur dazu
+da ist Emacs zu starten.
+</p>
+
+<p>
+Leider ist die Lernkurve relativ steil was es Neulingen oft erschwert einen
+Zugang zu finden. Außerdem gibt es viele alternative Editoren und die meisten
+sind für Einsteiger zugänglicher als Emacs. Aber wie in dieser Artikelreihe
+gezeigt werden soll, zahlt es auf lange Sicht mehr als aus, die Benutzung von
+Emacs zu erlernen.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Wieso Emacs?</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Besonders für Programmierer gibt es eine Fülle von Angeboten, und oft
+gibt es Editoren die speziell zur Verwendung einer bestimmten Programmiersprache
+angeboten werden. Der Nachteil ist, dass man beim Wechsel zu einer anderen
+Programmiersprache, eventuell einen anderen Editor benutzen muss, da der Support
+der anderen Sprache in dem verwendeten Editor unter Umständen mangelhaft ist.
+</p>
+
+<p>
+Hinzu kommt, dass viele Editoren Tastenkürzel anbieten um bestimmte oft genutzte
+Funktionen, schneller ausführen zu können ohne sich immer wieder durch die
+selben Menüs klicken zu müssen. Wenn man Glück hat dann bieten die verschiedenen
+Editoren die man nutzt eine Anpassung dieser Kürzel an, so dass man in
+verschiedenen Editoren die gleichen Tastenkürzel verwenden kann. Dies ist jedoch
+meistens nicht der Fall oder man kann nur bestimmte Funktionen mit Tastenkürzeln
+belegen.
+</p>
+
+<p>
+Weiterhin wäre es doch schön, wenn man dieselben Tastenkürzel die man im Editor
+verwendet auch beim schreiben von Email oder bei der Eingabe von Befehlen auf
+der Kommandozeile nutzen könnte.
+</p>
+
+<p>
+Ein schöne Eigenschaft von Emacs ist, dass es ein sehr modulare Editor ist und
+es für fast jede Programmiersprache Pakete gibt. Weiterhin gibt es Erweiterungen
+mit denen sich ein aus Emacs ein Emailclient, IRC Client und vieles anderes
+machen lässt. Im Prinzip ist Emacs ein großer REPL der zur Laufzeit durch
+ausführen von Code beliebig verändert werden kann. Das geht soweit, dass andere
+Editoren wie z.B. Vi/Vim in Emacs emuliert werden können, falls man deren
+Funktionalität gerne verwenden möchte.
+</p>
+
+<p>
+Emacs bietet ein einheitliches Interface für viele Aufgaben die man am Computer
+erledigt.
+</p>
+
+<p>
+Ehe man sich versieht werden Programme wie der Dateimanager, der Terminal
+Emulator, Emailclient, IRC CLient, Git Client, Feedreader und mehr durch Emacs
+ersetzt.
+</p>
+
+<p>
+Die erste öffentliche Version von GNU Emacs erschien bereits im Jahr 1985 und es
+gibt eine große Community, welche die Weiterentwicklung von Emacs
+vorantreibt. Just am 10. April wurde die Version 24.5 von Emacs veröffentlicht.
+Man kann getrost davon ausgehen, das der Support die eigene Lebenszeit
+überdauert, dass heisst das einmal gelernte bleibt mit hoher Wahrscheinlichkeit
+ein Leben lang von nutzen.
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Beispiele</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Hier ein paar aus dem Netz zusammengetragene Beispiele, die die Nutzung
+verschiedener Leute von Emacs zeigt.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">Installation</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Aber zunächst einmal zur Installation der neuen Version direkt von der "Quelle",
+wie es sich für Freie Magazin Leser gehört.
+</p>
+
+<p>
+Den Tarball findet man man auf dem <a href="http://ftpmirror.gnu.org/emacs/emacs-24.5.tar.gz">FTP</a> der <a href="https://www.gnu.org/">FSF</a> oder wenn man Git benutzt kann
+man sich das Emacs Repository auch direkt <a href="http://savannah.gnu.org/projects/emacs/">klonen</a>:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">git clone git://git.sv.gnu.org/emacs.git
+</pre>
+</div>
+
+<p>
+Falls man sich den Tarball geladen hat, kann man diesen über
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">tar xzvf emacs-24.5.tar.gz
+</pre>
+</div>
+<p>
+entpacken.
+</p>
+
+<p>
+Dann noch schnell ein paar Abhängigkeiten installieren.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">F&#252;r Debian-based</span>
+sudo apt-get install build-essential
+sudo apt-get build-dep emacs24
+<span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">F&#252;r Fedora/Red Hat-based</span>
+sudo yum groupinstall &#8220;Development Tools&#8221;
+sudo yum install yum-utils
+sudo yum-builddep emacs
+</pre>
+</div>
+
+
+<p>
+Nach dem Wechsel in das Emacs Verzeichnis muss man dann noch folgende
+Kommandos ausführen um Emacs zu installieren.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">Start Manual Installation</span>
+./autogen.sh
+<span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">Add prefix and path to where you want to install. This is useful if you work on a remote server without root access:</span>
+<span style="color: #5F7F5F;">#  </span><span style="color: #7F9F7F;">You have to use gtk3 to be able to use true type fonts.</span>
+./configure
+<span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">If ./configure tells you there are dependencies missing, you should install them.</span>
+<span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">build it</span>
+make
+<span style="color: #5F7F5F;"># </span><span style="color: #7F9F7F;">install it</span>
+sudo make install
+</pre>
+</div>
+<p>
+und schon ist man fertig.
+</p>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3">Tipps</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+<b>Swap Control and Capslock</b>
+Capslock ist eine selten genutzte Taste. Weil die CTRL Taste in Emacs häufig zum
+Einsatz kommt, wird oft empfohlen die CAPSLOCK Taste mit der CTRL Taste
+auszutauschen. Die Anleitung für so ziemlich jede Distribution findet ihr
+<a href="http://www.emacswiki.org/emacs/MovingTheCtrlKey">hier</a>. Allerdings auf Englisch.
+</p>
+
+<p>
+Ok, damit haben wir das wichtigste schon einmal aus dem Weg. In meinem nächsten
+Artikel werde ich dann anfagen darauf einzugehen, was man mit Emacs alles machen
+kann. Bis dahin könnt ihr ja schon einmal ein bischen rumexperimentieren.
+</p>
+
+<p>
+In Ausgabe 09/2008 findet ihr eine kleine Anleitung für Neulinge. Und für
+Neugierige bietet Emacs Rocks schon einmal einen Einblick.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+            <address id="about" class="vcard body">
+                <p>Dieser Blog ist mit <a href="http://getpelican.com/">Pelican</a>, generiert. Pelican ist ein Static Site Generator, geschrieben in <a href="http://python.org">Python</a>.</p>
+                <p>Das Theme dieser Seite ist eine angepasste Version des Themes von <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a></p>
+            </address><!-- /#about -->
+
+
+        </footer><!-- /#contentinfo -->
+
+    </body>
+</html>
