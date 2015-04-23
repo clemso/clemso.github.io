@@ -73,7 +73,7 @@
                 <article>
                     <h1 class="entry-title"><a href="./emacs-rocks-part-1.html">Emacs Rocks - Part 1</a></h1>
 <footer class="post-info">
-        <!-- <abbr class="published" title="2015-04-23T13:40:00+02:00"> -->
+        <!-- <abbr class="published" title="2015-04-23T18:00:00+02:00"> -->
                 <!-- Published: 23.4.2015 -->
         <!-- </abbr> -->
         <!--  -->
@@ -83,93 +83,116 @@
 </footer><!-- /.post-info -->
 <div id="content">
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Einleitung</h2>
+<h2 id="sec-1">Was ist Emacs</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-Wer sich mit Freier Software beschäftigt, hat vielleicht schon einmal von Emacs
-gehört. Falls nicht, es handelt sich um einen <b>sehr</b> flexiblen Texteditor. So
-flexibel, dass manche ihr Betriebsystem zum Bootloader degradieren, dass nur dazu
-da ist Emacs zu starten.
+Wer sich mit Freier Software beschäftigt, hat vielleicht schon einmal von GNU
+Emacs gehört. Falls nicht, es handelt sich um einen <b>sehr</b> flexiblen
+Texteditor. So flexibel, dass manche ihr Betriebsystem lediglich als Bootloader
+betrachten, der nur dazu dient Emacs zu starten. Das mag ein wenig übertrieben
+sein, aber fest steht, Emacs lässt sich, auf <b>vielfältige</b> Weise für Aufgaben vor
+dem Bildschirm verwenden. Hier ein paar der geläufigsten Verwendungen von Emacs:
+</p>
+
+<ul class="org-ul">
+<li>Editor
+</li>
+<li>Dateimanager
+</li>
+<li>Terminal Emulator
+</li>
+<li>Email Client
+</li>
+<li>IRC Client
+</li>
+<li>Feedreader
+</li>
+<li>Notizverwaltung
+</li>
+<li>Git Interface
+</li>
+</ul>
+
+<p>
+Leider ist die Lernkurve relativ steil, was es Neulingen oft erschwert einen
+Zugang zu finden. Auch ist es schwierig Emacs wirklich effektiv zu nutzen ohne
+ein wenig über die interne Programmiersprache von Emacs (<code>Elisp</code>) zu lernen.  Aber
+für Menschen die viel mit dem Computern arbeiten, zahlt sich die Mühe auf lange
+Sicht mehr als aus.
 </p>
 
 <p>
-Leider ist die Lernkurve relativ steil was es Neulingen oft erschwert einen
-Zugang zu finden. Außerdem gibt es viele alternative Editoren und die meisten
-sind für Einsteiger zugänglicher als Emacs. Aber wie in dieser Artikelreihe
-gezeigt werden soll, zahlt es auf lange Sicht mehr als aus, die Benutzung von
-Emacs zu erlernen.
+Ein weiterer Vorteil ist, dass dieses Wiseen mit hoher Wahrscheinlichkeit ein
+Leben lang von Nutzen bleibt, denn die erste öffentliche Version von GNU Emacs
+erschien bereits im Jahr 1985 und es existiert eine große Community, welche die
+Weiterentwicklung von Emacs bis zum heutigen Tag aktiv vorantreibt. Es ist nicht
+abzusehen, dass sich dies in nächster Zeit ändert.
 </p>
 </div>
 </div>
+
 
 
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Motivation</h2>
+<h2 id="sec-2">Installation</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Besonders für Programmierer gibt es eine Fülle von Angeboten an
-unterschiedlichen Editoren. Oft gibt es sogar Editoren die speziell zur Verwendung
-einer bestimmten Programmiersprache angeboten werden. Der Nachteil ist, dass man
-beim Wechsel zu einer anderen Programmiersprache, eventuell einen anderen Editor
-benutzen muss, da der Support der anderen Sprache in dem verwendeten Editor
-unter Umständen mangelhaft ist.
+Den Tarball findet man man auf dem <a href="http://ftpmirror.gnu.org/emacs/emacs-24.5.tar.gz">FTP</a> der <a href="https://www.gnu.org/">FSF</a>. Falls man Git benutzt, kann
+man sich das Emacs Repository auch direkt <a href="http://savannah.gnu.org/projects/emacs/">klonen</a>:
 </p>
 
-<p>
-Hinzu kommt, dass viele Editoren Tastenkürzel anbieten um bestimmte oft genutzte
-Funktionen schneller ausführen zu können ohne sich immer wieder durch die
-selben Menüs klicken zu müssen. Wenn man Glück hat dann bieten die verschiedenen
-Editoren die man nutzt eine Anpassung dieser Kürzel an, so dass man in
-verschiedenen Editoren die gleichen Tastenkürzel verwenden kann. Dies ist jedoch
-meistens nicht der Fall oder man kann nur bestimmte Funktionen mit Tastenkürzeln
-belegen.
-</p>
+<div class="org-src-container">
 
-<p>
-Weiterhin wäre es doch schön, wenn man dieselben Tastenkürzel die man im Editor
-verwendet auch beim schreiben von Emails oder bei der Eingabe von Befehlen auf
-der Kommandozeile nutzen könnte.
-</p>
-
-<p>
-Neben den Editoren gibt es Programme wie <a href="http://wiki.ubuntuusers.de/autokey">AutoKey</a> welche dem Nutzer die Möglichkeit
-bieten die Ausfühung beliebiger Aktionen am Computer per Tastenkürzel durchzuführen.
-</p>
-
-<p>
-Was wäre wenn es eine Software gäbe, die all diese Probleme adressiert und dazu
-noch <a href="http://www.gnu.org/philosophy/free-sw.html">freie</a> Software ist?
-</p>
-</div>
+<pre class="src src-sh">$ git clone git://git.sv.gnu.org/emacs.git
+</pre>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Emacs to the Rescue</h2>
-<div class="outline-text-2" id="text-3">
 <p>
-Emacs ist ein sehr modularer Editor und es gibt für fast jede Programmiersprache
-Pakete, die Emacs um die Unterstützung der Sprache erweitern. Weiterhin gibt es
-Erweiterungen mit denen sich aus Emacs ein Email-Client, IRC-Client und vieles
-anderes machen lässt. Im Prinzip ist Emacs ein großer <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a> der zur Laufzeit
-durch ausführen von Code beliebig verändert werden kann. Das geht soweit, dass
-andere Editoren wie z.B. Vi/Vim in Emacs <a href="http://www.emacswiki.org/emacs/Evil">emuliert</a> werden können, falls man deren
-Funktionalität gerne unter Emacs verwenden möchte.
+Falls man sich den Tarball geladen hat, kann man diesen über
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">$ tar xzvf emacs-24.5.tar.gz
+</pre>
+</div>
+<p>
+entpacken.
 </p>
 
 <p>
-Ehe man sich versieht werden Programme wie der Dateimanager, der Terminal
-Emulator, Emailclient, IRC CLient, Git Client, Feedreader und mehr durch Emacs
-ersetzt.
+Dann muss man noch schnell ein paar Abhängigkeiten installieren. Für Debian
+basierte Systeme geht dies mit
 </p>
+<div class="org-src-container">
+
+<pre class="src src-sh">$ sudo apt-get install build-essential
+$ sudo apt-get build-dep emacs24
+</pre>
+</div>
 
 <p>
-Die erste öffentliche Version von GNU Emacs erschien bereits im Jahr 1985 und es
-existiert eine große Community, welche die Weiterentwicklung von Emacs
-vorantreibt. Just am 10. April wurde die Version 24.5 von Emacs veröffentlicht.
-Man kann also getrost davon ausgehen, das der Support die eigene Lebenszeit
-überdauert, was bedeutet, dass das Gelernte mit hoher Wahrscheinlichkeit
-ein Leben lang von nutzen bleibt.
+Für Red-Hat basierte Systeme
 </p>
+<div class="org-src-container">
+
+<pre class="src src-sh">$ sudo yum groupinstall &#8220;Development Tools&#8221;
+$ sudo yum install yum-utils
+$ sudo yum-builddep emacs
+</pre>
+</div>
+
+<p>
+Nach dem Wechsel in das Emacs Verzeichnis muss man dann noch folgende
+Kommandos ausführen um Emacs zu installieren.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">$ ./autogen.sh
+$ ./configure
+$ make
+$ sudo make install
+</pre>
+</div>
 </div>
 </div>
 </div>
@@ -188,7 +211,7 @@ ein Leben lang von nutzen bleibt.
 
                 <div class="entry-content">
 <footer class="post-info">
-        <!-- <abbr class="published" title="2015-04-23T13:40:00+02:00"> -->
+        <!-- <abbr class="published" title="2015-04-23T18:00:00+02:00"> -->
                 <!-- Published: 23.4.2015 -->
         <!-- </abbr> -->
         <!--  -->
