@@ -73,8 +73,8 @@
                 <article>
                     <h1 class="entry-title"><a href="../emacs-rocks-part-1.html">Emacs Rocks - Part 1</a></h1>
 <footer class="post-info">
-        <!-- <abbr class="published" title="2015-04-25T17:40:00+02:00"> -->
-                <!-- Published: 25.4.2015 -->
+        <!-- <abbr class="published" title="2015-05-20T21:28:00+02:00"> -->
+                <!-- Published: 20.5.2015 -->
         <!-- </abbr> -->
         <!--  -->
 
@@ -89,40 +89,22 @@
 Wer sich mit Freier Software beschäftigt, hat vielleicht schon einmal von GNU
 Emacs gehört. Falls nicht, es handelt sich um einen <b>sehr</b> flexiblen
 Texteditor. So flexibel, dass manche ihr Betriebsystem lediglich als Bootloader
-betrachten, der nur dazu dient Emacs zu starten. Das mag ein wenig übertrieben
-sein, aber fest steht, Emacs lässt sich, auf <b>vielfältige</b> Weise für Aufgaben vor
-dem Bildschirm verwenden. Hier ein paar der geläufigsten Verwendungen von Emacs:
+betrachten, das nur dazu dient Emacs zu starten. Das mag ein wenig übertrieben
+sein, aber fest steht, Emacs lässt sich auf <b>vielfältige</b> Weise für Aufgaben vor
+dem Bildschirm verwenden. Beispiele dazu findet man im nächsten Abschnitt.
 </p>
-
-<ul class="org-ul">
-<li>Editor
-</li>
-<li>Dateimanager
-</li>
-<li>Terminal Emulator
-</li>
-<li>Email Client
-</li>
-<li>IRC Client
-</li>
-<li>Feedreader
-</li>
-<li>Notizverwaltung
-</li>
-<li>Git Interface
-</li>
-</ul>
 
 <p>
 Leider ist die Lernkurve relativ steil, was es Neulingen oft erschwert einen
 Zugang zu finden. Auch ist es schwierig Emacs wirklich effektiv zu nutzen ohne
 ein wenig über die interne Programmiersprache von Emacs (<code>Elisp</code>) zu lernen.  Aber
 für Menschen die viel mit dem Computern arbeiten, zahlt sich die Mühe auf lange
-Sicht mehr als aus.
+Sicht mehr als aus. Ich gehe im Folgendem noch darauf ein, warum es sich
+wirklich lohnt.
 </p>
 
 <p>
-Ein weiterer Vorteil ist, dass dieses Wiseen mit hoher Wahrscheinlichkeit ein
+Ein gute Sache ist außerdem, dass dieses Wissen mit hoher Wahrscheinlichkeit ein
 Leben lang von Nutzen bleibt, denn die erste öffentliche Version von GNU Emacs
 erschien bereits im Jahr 1985 und es existiert eine große Community, welche die
 Weiterentwicklung von Emacs bis zum heutigen Tag aktiv vorantreibt. Es ist nicht
@@ -134,8 +116,71 @@ abzusehen, dass sich dies in nächster Zeit ändert.
 
 
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Installation</h2>
+<h2 id="sec-2">Anwendungsbeispiele</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+<i>Was kann man mit Emacs alles machen?</i> Die Frage lässt sich nicht so leicht
+beantworten, denn man kann wirklich sehr viel mit Emacs machen :). Das liegt
+daran, dass Emacs programmierbar ist und man Programme in der Editor eigenen
+Programmiersprache <code>Elisp</code> schreiben kann. Damit lassen sich sowohl vom Editor
+unabhängige Skripte schreiben, als auch Module schreiben, welche die
+Editorumgebung beliebig anpassen.
+</p>
+
+<p>
+Am häufigsten wird Emacs wahrscheinlich von Programmierern genutzt. Aber Emacs
+hat durchaus auch für nicht Programmierende viel zu bieten. Hier ist eine Liste
+mit Beispielen, wozu ich Emacs nutze:
+</p>
+
+<ul class="org-ul">
+<li>Editor (Text, IDE, Literate Programming, Latex)
+</li>
+<li>Dateimanager
+</li>
+<li>Terminal Emulator
+</li>
+<li>Feedreader
+</li>
+<li>Email Client
+</li>
+<li>IRC Client
+</li>
+<li>Notizverwaltung
+</li>
+<li>Git Interface
+</li>
+<li>Static Site Generator
+</li>
+</ul>
+
+
+<p>
+Es gibt noch viele weitere Anwendungsmöglichkeiten von Emacs. Eine weit
+verbreitete ist z.B. Emacs als Organizer zu nutzen. Neulich stieß ich auf einen
+interessanten <a href="http://www.huffingtonpost.com/quora/how-do-blind-computer-pro_b_7163674.html">Artikel</a> in dem ein Blinder beschreibt wie er Emacs nutzt, um damit
+zu programmieren. Wer möchte kann sich mit den folgenden Videos einen
+konkreteren Eindruck verschaffen:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=B6jfrrwR10k">Einführung und Demonstration - Video</a>
+</li>
+<li><a href="http://emacsrocks.com/">Emacs als Programmiereditor - Video</a>
+</li>
+</ul>
+
+<p>
+Und in <a href="http://www.howardism.org/Technical/Emacs/new-window-manager.html">diesem</a> bebilderten Blog Post sieht man ein paar weitere Beispiele. 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Installation</h2>
+<div class="outline-text-2" id="text-3">
 <p>
 Den Tarball findet man man auf dem <a href="http://ftpmirror.gnu.org/emacs/emacs-24.5.tar.gz">FTP</a> der <a href="https://www.gnu.org/">FSF</a>. Falls man Git benutzt, kann
 man sich das Emacs Repository auch direkt <a href="http://savannah.gnu.org/projects/emacs/">klonen</a>:
@@ -183,7 +228,7 @@ $ sudo yum-builddep emacs
 
 <p>
 Nach dem Wechsel in das Emacs Verzeichnis muss man dann noch folgende
-Kommandos ausführen um Emacs zu installieren.
+Kommandos ausführen 
 </p>
 <div class="org-src-container">
 
@@ -193,6 +238,104 @@ $ make
 $ sudo make install
 </pre>
 </div>
+<p>
+um Emacs zu installieren.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4">Initial Setup</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Barebone Emacs ist zwar gut und schön aber da Emacs freie Software ist gibt es
+viele nützliche Erweiterungen die man sich installieren kann. Das geht ganz
+einfach über den integrierten Paketmanager. Oder aber man nutzt eines der vielen
+Starter-Kits bei denen schon viele Erweiterungen vorinstalliert sind und ein
+Reihe von Emacs Konfigurationen angepasst worden sind. 
+</p>
+
+<p>
+Ich finde die Starter-Kits sind eine gute Sache, aber auf Lange Sicht ist es
+wohl besser die Konfiguration selbst vorzunehmen, damit man lernt wie Emacs
+funktioniert und seine eigenen Konfigurationswünsche umsetzen kann.
+</p>
+
+<p>
+Hier sind drei bekannte Starter-Kits:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://github.com/eschulte/emacs24-starter-kit/">Emacs 24 Starter Kit </a>
+</li>
+<li><a href="https://github.com/bbatsov/prelude">Emacs Prelude</a>
+</li>
+<li><a href="https://github.com/syl20bnr/spacemacs">Spacemacs</a>
+</li>
+</ul>
+
+<p>
+Wer lieber kein Starter-Kit Nutzen möchte der sollte sich zunächst den
+Paketmanager konfigurieren um Erweiterungen installieren zu können. Dazu muss
+man im <code>HOME</code> Verzeichnis die Konfigurationsdatei <code>.emacs</code> erstellen und sie mit
+folgenden Inhalt füllen:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(<span style="color: #F0DFAF; font-weight: bold;">require</span> '<span style="color: #BFEBBF;">package</span>)
+(setq package-enable-at-startup nil)
+(package-initialize)
+
+(add-to-list 'package-archives
+             '(<span style="color: #CC9393;">"melpa"</span> .
+               <span style="color: #CC9393;">"http://melpa.milkbox.net/packages/"</span>) t)
+
+(add-to-list 'package-archives 
+             '(<span style="color: #CC9393;">"marmalade"</span> . <span style="color: #CC9393;">"http://marmalade-repo.org/packages/"</span>))
+</pre>
+</div>
+
+<p>
+Die Datei wird beim starten von Emacs geladen. Damit hat man zwei der
+populärsten Hoster von Emacs Paketen hinzugefügt. 
+</p>
+
+<p>
+Alternativ kann man auch die Datei <code>.init.el</code> im Verzeichnis <code>~/.emacs.d</code> nutzen,
+falls man keine Konfigurationsdateien auf dem Top Level des <code>HOME</code> Verzeichnisses
+mag.
+</p>
+
+<p>
+Wie man Pakete installiert und konfiguriert beschreibe ich in den kommenden Artikeln.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5">Wie lerne ich mehr über Emacs?</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Abonniere meinen Blog Feed ;) Ich plane noch viel Beiträge über Emacs zu
+schreiben. Wer nicht warten möchte und des Englischen mächtig ist, für den
+stehen eine Reihe von Resourcen aus dem Netz zur Verfügung:
+</p>
+
+<ul class="org-ul">
+<li><a href="http://www.youtube.com/playlist?list=PLxj9UAX4Em-IiOfvF2Qs742LxEK4owSkr">Video</a>
+</li>
+<li><a href="http://emacslife.com/">Text</a>
+</li>
+<li><a href="http://www.ibm.com/developerworks/views/aix/libraryview.jsp?search_by=emacs+editing+environment">Text</a>
+</li>
+<li><a href="http://david.rothlis.net/emacs/howtolearn.html">Text</a>
+</li>
+<li><a href="https://tuhdo.github.io/index.html">Text</a>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -211,15 +354,15 @@ $ sudo make install
 
                 <div class="entry-content">
 <footer class="post-info">
-        <!-- <abbr class="published" title="2015-04-25T17:40:00+02:00"> -->
-                <!-- Published: 25.4.2015 -->
+        <!-- <abbr class="published" title="2015-05-13T03:46:00+02:00"> -->
+                <!-- Published: 13.5.2015 -->
         <!-- </abbr> -->
         <!--  -->
 
 <!-- <p>In <a href="../category/emacs.html">Emacs</a>. </p> -->
 
-</footer><!-- /.post-info -->                
-                <!-- <a class="readmore" href="../emacs-rocks-part-2.html">read more</a> -->
+</footer><!-- /.post-info -->                Noch nicht veröffentlicht.
+                <a class="readmore" href="../emacs-rocks-part-2.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
