@@ -1,94 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
     <head>
         <meta charset="utf-8" />
         <title>Emacs Rocks - Part 1</title>
-        <link rel="stylesheet" href="./theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Byteweise Atom Feed" />
+
+        <link rel="stylesheet" href="./static/css/main.css" />
+
+        <link href="././feed/atom.xml" type="application/atom+xml" rel="alternate" title="Byteweise Atom Feed" />
+        <!-- <link href="./" type="application/rss+xml" rel="alternate" title="Byteweise RSS Feed" /> -->
+
+
         <script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
         <script type="text/javascript" src="./static/js/fly.js"></script>
 
-        <script type="text/javascript">
-<!--/*--><![CDATA[/*><!--*/
-    MathJax.Hub.Config({
-        // Only one of the two following lines, depending on user settings
-        // First allows browser-native MathML display, second forces HTML/CSS
-        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
-                     "TeX/noUndefined.js"],
-        tex2jax: {
-            inlineMath: [ ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
-            skipTags: ["script","noscript","style","textarea","pre","code"],
-            ignoreClass: "tex2jax_ignore",
-            processEscapes: false,
-            processEnvironments: true,
-            preview: "TeX"
-        },
-        showProcessingMessages: true,
-        displayAlign: "center",
-        displayIndent: "2em",
-
-        "HTML-CSS": {
-             scale: 100,
-             availableFonts: ["STIX","TeX"],
-             preferredFont: "TeX",
-             webFont: "TeX",
-             imageFont: "TeX",
-             showMathMenu: true,
-        },
-        MMLorHTML: {
-             prefer: {
-                 MSIE:    "MML",
-                 Firefox: "MML",
-                 Opera:   "HTML",
-                 other:   "HTML"
-             }
-        }
-    });
-/*]]>*///-->
-</script>
-
-
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <![endif]-->
+        <![endif]-->
+
     </head>
 
     <body id="index" class="home">
-<a href="http://github.com/clemso/">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
         <header id="banner" class="body">
-            <h1><a href="./">Byteweise </a></h1>
+            <h1><a href="index.html">Byteweise </a></h1>
             <nav><ul>
-                    <li class="active"><a href="./category/emacs.html">Emacs</a></li>
-                    <li><a href="./category/programming.html">Programming</a></li>
+                    
+                    <li class="active"><a href="Emacs.html">Emacs</a></li>
+                    
+                    <li><a href="Programming.html">Programming</a></li>
+                    
 
-                    <li style="float:right;"><a style="border-radius: 0px 5px 5px 0px;"href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"><img src="static/img/rss.png" class="" alt="RSS" style="border-radius:10px;"/></a></li>
+
+                    
+                    
             </ul></nav>
-        </header><!-- /#banner -->
+        </header>
+        
 <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
         <a href="./emacs-rocks-part-1.html" rel="bookmark"
            title="Permalink to Emacs Rocks - Part 1">Emacs Rocks - Part 1</a></h1>
+
     </header>
 
     <div class="entry-content">
-<footer class="post-info">
-        <!-- <abbr class="published" title="2015-05-20T21:28:00+02:00"> -->
-                <!-- Published: 20.5.2015 -->
-        <!-- </abbr> -->
-        <!--  -->
-
-<!-- <p>In <a href="./category/emacs.html">Emacs</a>. </p> -->
-
-</footer><!-- /.post-info -->      
-<div id="content">
-<div id="outline-container-sec-1" class="outline-2">
+        
+<div class="outline-2" id="outline-container-sec-1">
 <h2 id="sec-1">Was ist Emacs</h2>
 <div class="outline-text-2" id="text-1">
 <p>
@@ -99,7 +57,6 @@ betrachten, das nur dazu dient Emacs zu starten. Das mag ein wenig übertrieben
 sein, aber fest steht, Emacs lässt sich auf <b>vielfältige</b> Weise für Aufgaben vor
 dem Bildschirm verwenden. Beispiele dazu findet man im nächsten Abschnitt.
 </p>
-
 <p>
 Leider ist die Lernkurve relativ steil, was es Neulingen oft erschwert einen
 Zugang zu finden. Auch ist es schwierig Emacs wirklich effektiv zu nutzen ohne
@@ -108,7 +65,6 @@ für Menschen die viel mit dem Computern arbeiten, zahlt sich die Mühe auf lang
 Sicht mehr als aus. Ich gehe im Folgendem noch darauf ein, warum es sich
 wirklich lohnt.
 </p>
-
 <p>
 Ein gute Sache ist außerdem, dass dieses Wissen mit hoher Wahrscheinlichkeit ein
 Leben lang von Nutzen bleibt, denn die erste öffentliche Version von GNU Emacs
@@ -118,10 +74,7 @@ abzusehen, dass sich dies in nächster Zeit ändert.
 </p>
 </div>
 </div>
-
-
-
-<div id="outline-container-sec-2" class="outline-2">
+<div class="outline-2" id="outline-container-sec-2">
 <h2 id="sec-2">Anwendungsbeispiele</h2>
 <div class="outline-text-2" id="text-2">
 <p>
@@ -132,13 +85,11 @@ Programmiersprache <code>Elisp</code> schreiben kann. Damit lassen sich sowohl v
 unabhängige Skripte schreiben, als auch Module schreiben, welche die
 Editorumgebung beliebig anpassen.
 </p>
-
 <p>
 Am häufigsten wird Emacs wahrscheinlich von Programmierern genutzt. Aber Emacs
 hat durchaus auch für nicht Programmierende viel zu bieten. Hier ist eine Liste
 mit Beispielen, wozu ich Emacs nutze:
 </p>
-
 <ul class="org-ul">
 <li>Editor (Text, IDE, Literate Programming, Latex)
 </li>
@@ -159,8 +110,6 @@ mit Beispielen, wozu ich Emacs nutze:
 <li>Static Site Generator
 </li>
 </ul>
-
-
 <p>
 Es gibt noch viele weitere Anwendungsmöglichkeiten von Emacs. Eine weit
 verbreitete ist z.B. Emacs als Organizer zu nutzen. Neulich stieß ich auf einen
@@ -168,76 +117,61 @@ interessanten <a href="http://www.huffingtonpost.com/quora/how-do-blind-computer
 zu programmieren. Wer möchte kann sich mit den folgenden Videos einen
 konkreteren Eindruck verschaffen:
 </p>
-
 <ul class="org-ul">
 <li><a href="https://www.youtube.com/watch?v=B6jfrrwR10k">Einführung und Demonstration - Video</a>
 </li>
 <li><a href="http://emacsrocks.com/">Emacs als Programmiereditor - Video</a>
 </li>
 </ul>
-
 <p>
-Und in <a href="http://www.howardism.org/Technical/Emacs/new-window-manager.html">diesem</a> bebilderten Blog Post sieht man ein paar weitere Beispiele. 
+Und in <a href="http://www.howardism.org/Technical/Emacs/new-window-manager.html">diesem</a> bebilderten Blog Post sieht man ein paar weitere Beispiele.
 </p>
 </div>
 </div>
-
-
-
-<div id="outline-container-sec-3" class="outline-2">
+<div class="outline-2" id="outline-container-sec-3">
 <h2 id="sec-3">Installation</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Den Tarball findet man man auf dem <a href="http://ftpmirror.gnu.org/emacs/emacs-24.5.tar.gz">FTP</a> der <a href="https://www.gnu.org/">FSF</a>. Falls man Git benutzt, kann
 man sich das Emacs Repository auch direkt <a href="http://savannah.gnu.org/projects/emacs/">klonen</a>:
 </p>
-
 <div class="org-src-container">
-
 <pre class="src src-sh">$ git clone git://git.sv.gnu.org/emacs.git
 </pre>
 </div>
-
 <p>
 Falls man sich den Tarball geladen hat, kann man diesen über
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">$ tar xzvf emacs-24.5.tar.gz
 </pre>
 </div>
 <p>
 entpacken.
 </p>
-
 <p>
 Dann muss man noch schnell ein paar Abhängigkeiten installieren. Für Debian
 basierte Systeme geht dies mit
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">$ sudo apt-get install build-essential
 $ sudo apt-get build-dep emacs24
 </pre>
 </div>
-
 <p>
 Für Red-Hat basierte Systeme
 </p>
 <div class="org-src-container">
-
-<pre class="src src-sh">$ sudo yum groupinstall &#8220;Development Tools&#8221;
+<pre class="src src-sh">$ sudo yum groupinstall “Development Tools”
 $ sudo yum install yum-utils
 $ sudo yum-builddep emacs
 </pre>
 </div>
-
 <p>
 Nach dem Wechsel in das Emacs Verzeichnis muss man dann noch folgende
-Kommandos ausführen 
+Kommandos ausführen
 </p>
 <div class="org-src-container">
-
 <pre class="src src-sh">$ ./autogen.sh
 $ ./configure
 $ make
@@ -249,9 +183,7 @@ um Emacs zu installieren.
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-sec-4" class="outline-2">
+<div class="outline-2" id="outline-container-sec-4">
 <h2 id="sec-4">Initial Setup</h2>
 <div class="outline-text-2" id="text-4">
 <p>
@@ -259,19 +191,16 @@ Barebone Emacs ist zwar gut und schön aber da Emacs freie Software ist gibt es
 viele nützliche Erweiterungen die man sich installieren kann. Das geht ganz
 einfach über den integrierten Paketmanager. Oder aber man nutzt eines der vielen
 Starter-Kits bei denen schon viele Erweiterungen vorinstalliert sind und ein
-Reihe von Emacs Konfigurationen angepasst worden sind. 
+Reihe von Emacs Konfigurationen angepasst worden sind.
 </p>
-
 <p>
 Ich finde die Starter-Kits sind eine gute Sache, aber auf Lange Sicht ist es
 wohl besser die Konfiguration selbst vorzunehmen, damit man lernt wie Emacs
 funktioniert und seine eigenen Konfigurationswünsche umsetzen kann.
 </p>
-
 <p>
 Hier sind drei bekannte Starter-Kits:
 </p>
-
 <ul class="org-ul">
 <li><a href="https://github.com/eschulte/emacs24-starter-kit/">Emacs 24 Starter Kit </a>
 </li>
@@ -280,16 +209,13 @@ Hier sind drei bekannte Starter-Kits:
 <li><a href="https://github.com/syl20bnr/spacemacs">Spacemacs</a>
 </li>
 </ul>
-
 <p>
 Wer lieber kein Starter-Kit Nutzen möchte der sollte sich zunächst den
 Paketmanager konfigurieren um Erweiterungen installieren zu können. Dazu muss
 man im <code>HOME</code> Verzeichnis die Konfigurationsdatei <code>.emacs</code> erstellen und sie mit
 folgenden Inhalt füllen:
 </p>
-
 <div class="org-src-container">
-
 <pre class="src src-emacs-lisp">(<span style="color: #F0DFAF; font-weight: bold;">require</span> '<span style="color: #BFEBBF;">package</span>)
 (setq package-enable-at-startup nil)
 (package-initialize)
@@ -298,30 +224,25 @@ folgenden Inhalt füllen:
              '(<span style="color: #CC9393;">"melpa"</span> .
                <span style="color: #CC9393;">"http://melpa.milkbox.net/packages/"</span>) t)
 
-(add-to-list 'package-archives 
+(add-to-list 'package-archives
              '(<span style="color: #CC9393;">"marmalade"</span> . <span style="color: #CC9393;">"http://marmalade-repo.org/packages/"</span>))
 </pre>
 </div>
-
 <p>
 Die Datei wird beim starten von Emacs geladen. Damit hat man zwei der
-populärsten Hoster von Emacs Paketen hinzugefügt. 
+populärsten Hoster von Emacs Paketen hinzugefügt.
 </p>
-
 <p>
 Alternativ kann man auch die Datei <code>.init.el</code> im Verzeichnis <code>~/.emacs.d</code> nutzen,
 falls man keine Konfigurationsdateien auf dem Top Level des <code>HOME</code> Verzeichnisses
 mag.
 </p>
-
 <p>
 Wie man Pakete installiert und konfiguriert beschreibe ich in den kommenden Artikeln.
 </p>
 </div>
 </div>
-
-
-<div id="outline-container-sec-5" class="outline-2">
+<div class="outline-2" id="outline-container-sec-5">
 <h2 id="sec-5">Wie lerne ich mehr über Emacs?</h2>
 <div class="outline-text-2" id="text-5">
 <p>
@@ -329,9 +250,8 @@ Abonniere meinen Blog Feed ;) Ich plane noch viel Beiträge über Emacs zu
 schreiben. Wer nicht warten möchte und des Englischen mächtig ist, für den
 stehen eine Reihe von Resourcen aus dem Netz zur Verfügung:
 </p>
-
 <ul class="org-ul">
-<li><a href="http://www.youtube.com/playlist?list=PLxj9UAX4Em-IiOfvF2Qs742LxEK4owSkr">Video</a>
+<li><a href="http://www.youtube.com/playlist?list=PLxj9UAX4Em-IiOfvF2Qs742LxEK4owSkr">Videos</a>
 </li>
 <li><a href="http://emacslife.com/">Text</a>
 </li>
@@ -342,16 +262,15 @@ stehen eine Reihe von Resourcen aus dem Netz zur Verfügung:
 <li><a href="https://tuhdo.github.io/index.html">Text</a>
 </li>
 </ul>
-</div>
+<img alt="real programmers use emacs" src="static/img/real_programmers.png"/>
 </div>
 </div>
 
-    </div><!-- /.entry-content -->
+    </div>
 
   </article>
 </section>
-        <section id="extras" class="body">
-        </section><!-- /#extras -->
+
 
         <footer id="contentinfo" class="body">
             <address id="about" class="vcard body">
@@ -369,12 +288,22 @@ python -c <span style="color: #CC9393;">"import sys;import codecs;sys.stdout.wri
 (rot13 <span style="color: #CC9393;">"pyrzfb@cbfgrb.qr"</span>)
 </pre>
 </div>
-                <!-- <p>Dieser Blog ist mit <a href="http://getpelican.com/">Pelican</a>, generiert. Pelican ist ein Static Site Generator, geschrieben in <a href="http://python.org">Python</a>.</p> -->
-                <!-- <p>Das Theme dieser Seite ist eine angepasste Version des Themes von <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a></p> -->
-            </address><!-- /#about -->
+
+            </address>
 
 
-        </footer><!-- /#contentinfo -->
-
+        </footer>
+        
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

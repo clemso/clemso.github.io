@@ -34,7 +34,11 @@ body {
 pre.src {
     background-color: #3F3F3F;
     color: white;
+    font-size: 15px;
+
+
 }
+
 span.linenr {
     color: gray;
 }

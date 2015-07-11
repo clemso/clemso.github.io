@@ -1,261 +1,315 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
     <head>
         <meta charset="utf-8" />
         <title>Byteweise</title>
-        <link rel="stylesheet" href="./theme/css/main.css" />
-        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Byteweise Atom Feed" />
+
+        <link rel="stylesheet" href="./static/css/main.css" />
+
+        <link href="././feed/atom.xml" type="application/atom+xml" rel="alternate" title="Byteweise Atom Feed" />
+        <!-- <link href="./" type="application/rss+xml" rel="alternate" title="Byteweise RSS Feed" /> -->
+
+
         <script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
         <script type="text/javascript" src="./static/js/fly.js"></script>
 
-        <script type="text/javascript">
-<!--/*--><![CDATA[/*><!--*/
-    MathJax.Hub.Config({
-        // Only one of the two following lines, depending on user settings
-        // First allows browser-native MathML display, second forces HTML/CSS
-        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
-                     "TeX/noUndefined.js"],
-        tex2jax: {
-            inlineMath: [ ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
-            skipTags: ["script","noscript","style","textarea","pre","code"],
-            ignoreClass: "tex2jax_ignore",
-            processEscapes: false,
-            processEnvironments: true,
-            preview: "TeX"
-        },
-        showProcessingMessages: true,
-        displayAlign: "center",
-        displayIndent: "2em",
-
-        "HTML-CSS": {
-             scale: 100,
-             availableFonts: ["STIX","TeX"],
-             preferredFont: "TeX",
-             webFont: "TeX",
-             imageFont: "TeX",
-             showMathMenu: true,
-        },
-        MMLorHTML: {
-             prefer: {
-                 MSIE:    "MML",
-                 Firefox: "MML",
-                 Opera:   "HTML",
-                 other:   "HTML"
-             }
-        }
-    });
-/*]]>*///-->
-</script>
-
-
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <![endif]-->
+        <![endif]-->
+
     </head>
 
     <body id="index" class="home">
-<a href="http://github.com/clemso/">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
         <header id="banner" class="body">
-            <h1><a href="./">Byteweise </a></h1>
+            <h1><a href="index.html">Byteweise </a></h1>
             <nav><ul>
-                    <li><a href="./category/emacs.html">Emacs</a></li>
-                    <li><a href="./category/programming.html">Programming</a></li>
+                    
+                    <li><a href="Emacs.html">Emacs</a></li>
+                    
+                    <li><a href="Programming.html">Programming</a></li>
+                    
 
-                    <li style="float:right;"><a style="border-radius: 0px 5px 5px 0px;"href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"><img src="static/img/rss.png" class="" alt="RSS" style="border-radius:10px;"/></a></li>
+
+                    
+                    
             </ul></nav>
-        </header><!-- /#banner -->
+        </header>
+        
 
+
+    
+
+        
+         <!--  and not articles.has_previous() -->
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="./my-sicp-journey.html">My SICP journey</a></h1>
-<footer class="post-info">
-        <!-- <abbr class="published" title="2015-05-24T10:50:00+02:00"> -->
-                <!-- Published: 24.5.2015 -->
-        <!-- </abbr> -->
-        <!--  -->
-
-<!-- <p>In <a href="./category/programming.html">Programming</a>. </p> -->
-
-</footer><!-- /.post-info -->
-<div id="content">
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1">Was ist SICP?</h2>
+                    <h1 class="entry-title"><a href="./emacs-rocks-part-1.html">Emacs Rocks - Part 1</a></h1>
+                    
+<div class="outline-2" id="outline-container-sec-1">
+<h2 id="sec-1">Was ist Emacs</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-SICP ist die Abkürzung für das Buch "Structure and Interpretation of Computer
-Programs" das aus einem Computer Science Kurs des MIT entstanden ist. Trotz
-seines Alters (2. Edition ist von 1996), wird es immer wieder empfohlen und
-hochgelobt und als <b>DAS</b> Programmierer Buch schlechthin beschrieben. Eine große
-Hürde ist, dass das Buch die Programmiersprache Scheme verwendet, die viele
-heutzutage nicht kennen. Außerdem soll es einen relativ hohen Anspruch
-haben. Durch Emacs habe ich Elisp kennengelernt, eine Sprache die mit Lisp
-verwandt ist und da Scheme ein Lisp Dialekt ist, habe ich beschlossen zu
-versuchen ob ich mit dem Buch klar komme. Meine Ergebnisse dieser
-Erkundungsreise werde ich nach und nach hier auf meinem Blog
-veröffentlichen.
+Wer sich mit Freier Software beschäftigt, hat vielleicht schon einmal von GNU
+Emacs gehört. Falls nicht, es handelt sich um einen <b>sehr</b> flexiblen
+Texteditor. So flexibel, dass manche ihr Betriebsystem lediglich als Bootloader
+betrachten, das nur dazu dient Emacs zu starten. Das mag ein wenig übertrieben
+sein, aber fest steht, Emacs lässt sich auf <b>vielfältige</b> Weise für Aufgaben vor
+dem Bildschirm verwenden. Beispiele dazu findet man im nächsten Abschnitt.
+</p>
+<p>
+Leider ist die Lernkurve relativ steil, was es Neulingen oft erschwert einen
+Zugang zu finden. Auch ist es schwierig Emacs wirklich effektiv zu nutzen ohne
+ein wenig über die interne Programmiersprache von Emacs (<code>Elisp</code>) zu lernen.  Aber
+für Menschen die viel mit dem Computern arbeiten, zahlt sich die Mühe auf lange
+Sicht mehr als aus. Ich gehe im Folgendem noch darauf ein, warum es sich
+wirklich lohnt.
+</p>
+<p>
+Ein gute Sache ist außerdem, dass dieses Wissen mit hoher Wahrscheinlichkeit ein
+Leben lang von Nutzen bleibt, denn die erste öffentliche Version von GNU Emacs
+erschien bereits im Jahr 1985 und es existiert eine große Community, welche die
+Weiterentwicklung von Emacs bis zum heutigen Tag aktiv vorantreibt. Es ist nicht
+abzusehen, dass sich dies in nächster Zeit ändert.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Herangehensweise</h2>
+<div class="outline-2" id="outline-container-sec-2">
+<h2 id="sec-2">Anwendungsbeispiele</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-Das Buch ist Online in mehreren Versionen frei verfügbar (<a href="https://sicpebook.files.wordpress.com/2011/06/sicp.pdf">pdf</a>, <a href="https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html">html</a>,
-<a href="https://xuanji.appspot.com/isicp/index.html">interactive-version</a>, <a href="http://www.neilvandyke.org/sicp-texi/sicp.info.gz">info</a>).  Für mich ist besonders die info Version
-interessant, da ich das Buch so in Emacs lesen kann und die Codebeispiele bequem
-kopieren und ausführen kann.
+<i>Was kann man mit Emacs alles machen?</i> Die Frage lässt sich nicht so leicht
+beantworten, denn man kann wirklich sehr viel mit Emacs machen :). Das liegt
+daran, dass Emacs programmierbar ist und man Programme in der Editor eigenen
+Programmiersprache <code>Elisp</code> schreiben kann. Damit lassen sich sowohl vom Editor
+unabhängige Skripte schreiben, als auch Module schreiben, welche die
+Editorumgebung beliebig anpassen.
 </p>
-
 <p>
-Es gibt eine Reihe von Online Kursen, deren Materialien man nutzen kann:
-</p>
-
-<ul class="org-ul">
-<li><a href="https://edge.edx.org/courses/course-v1:UCBerkeley+CS61AS+Spring_2015/about">Berkley Course Material</a>
-</li>
-<li><a href="http://webcast.berkeley.edu/playlist#c,d,Computer_Science,3E89002AA9B9879E">Berkley Lecture Videos</a> 
-</li>
-<li><a href="http://aduni.org/courses/sicp/index.php?view=cw">ADUni Course Material + Lecture Videos</a> 
-</li>
-<li><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/index.htm">MIT Course Material + Lecture Videos</a>
-</li>
-</ul>
-
-<p>
-Außerdem gibt es eine Reihe von anderen Bloggern die bereits dasselbe Projekt
-unternommen haben:
-</p>
-
-<ul class="org-ul">
-<li><a href="http://eli.thegreenplace.net/tag/sicp">Eli Bendersky</a>
-</li>
-<li><a href="http://www.billthelizard.com/2009/10/sicp-challenge.html">Bill the Lizard</a>
-</li>
-<li><a href="http://wiki.drewhess.com/wiki/Category:SICP_solutions">Drewiki</a>
-</li>
-<li><a href="https://wqzhang.wordpress.com/sicp-solutions/">Weiqun Zhang</a>
-</li>
-</ul>
-
-
-<p>
-Mein eigener Plan ist wie folgt:
+Am häufigsten wird Emacs wahrscheinlich von Programmierern genutzt. Aber Emacs
+hat durchaus auch für nicht Programmierende viel zu bieten. Hier ist eine Liste
+mit Beispielen, wozu ich Emacs nutze:
 </p>
 <ul class="org-ul">
-<li>Durcharbeiten des Buches 
+<li>Editor (Text, IDE, Literate Programming, Latex)
 </li>
-<li>Anschauen der Kurs Videos
+<li>Dateimanager
 </li>
-<li>Lösen der Übungen
+<li>Terminal Emulator
 </li>
-<li>Durchgehen der Lösungen der anderen Blogger
+<li>Feedreader
 </li>
-<li>Die Übungen der Kurse durchgehen 
+<li>Email Client
 </li>
-<li>Die Examen der Kurse durchgehen
+<li>IRC Client
+</li>
+<li>Notizverwaltung
+</li>
+<li>Git Interface
+</li>
+<li>Static Site Generator
 </li>
 </ul>
-
 <p>
-Mal sehen wie weit ich komme :)
+Es gibt noch viele weitere Anwendungsmöglichkeiten von Emacs. Eine weit
+verbreitete ist z.B. Emacs als Organizer zu nutzen. Neulich stieß ich auf einen
+interessanten <a href="http://www.huffingtonpost.com/quora/how-do-blind-computer-pro_b_7163674.html">Artikel</a> in dem ein Blinder beschreibt wie er Emacs nutzt, um damit
+zu programmieren. Wer möchte kann sich mit den folgenden Videos einen
+konkreteren Eindruck verschaffen:
+</p>
+<ul class="org-ul">
+<li><a href="https://www.youtube.com/watch?v=B6jfrrwR10k">Einführung und Demonstration - Video</a>
+</li>
+<li><a href="http://emacsrocks.com/">Emacs als Programmiereditor - Video</a>
+</li>
+</ul>
+<p>
+Und in <a href="http://www.howardism.org/Technical/Emacs/new-window-manager.html">diesem</a> bebilderten Blog Post sieht man ein paar weitere Beispiele.
 </p>
 </div>
 </div>
-
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3">Setup</h2>
+<div class="outline-2" id="outline-container-sec-3">
+<h2 id="sec-3">Installation</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-Wie bereits erwähnt werde ich Emacs nutzen. Scheme wird von Emacs von Haus aus
-unterstützt.  Man muss nur Scheme systemseitig installieren:
+Den Tarball findet man man auf dem <a href="http://ftpmirror.gnu.org/emacs/emacs-24.5.tar.gz">FTP</a> der <a href="https://www.gnu.org/">FSF</a>. Falls man Git benutzt, kann
+man sich das Emacs Repository auch direkt <a href="http://savannah.gnu.org/projects/emacs/">klonen</a>:
 </p>
-
 <div class="org-src-container">
-
-<pre class="src src-sh">sudo apt-get install mit-scheme
+<pre class="src src-sh">$ git clone git://git.sv.gnu.org/emacs.git
 </pre>
 </div>
-
 <p>
-Hier ist die Anleitung um die Info Node des Buches zu installieren:
+Falls man sich den Tarball geladen hat, kann man diesen über
 </p>
-
 <div class="org-src-container">
-
-<pre class="src src-sh">wget http://www.neilvandyke.org/sicp-texi/sicp.info.gz
-gunzip sicp*
-sudo cp sicp.info /usr/share/info
-sudo install-info --info-dir=/usr/share/info sicp.info
+<pre class="src src-sh">$ tar xzvf emacs-24.5.tar.gz
 </pre>
 </div>
-
 <p>
-Der Kurs von Berkley benutzt eine <a href="https://inst.eecs.berkeley.edu/~scheme/">modifizierte</a> Scheme Version, die Installation
-ist auf der Website beschrieben.
+entpacken.
+</p>
+<p>
+Dann muss man noch schnell ein paar Abhängigkeiten installieren. Für Debian
+basierte Systeme geht dies mit
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ sudo apt-get install build-essential
+$ sudo apt-get build-dep emacs24
+</pre>
+</div>
+<p>
+Für Red-Hat basierte Systeme
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ sudo yum groupinstall “Development Tools”
+$ sudo yum install yum-utils
+$ sudo yum-builddep emacs
+</pre>
+</div>
+<p>
+Nach dem Wechsel in das Emacs Verzeichnis muss man dann noch folgende
+Kommandos ausführen
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ ./autogen.sh
+$ ./configure
+$ make
+$ sudo make install
+</pre>
+</div>
+<p>
+um Emacs zu installieren.
 </p>
 </div>
 </div>
+<div class="outline-2" id="outline-container-sec-4">
+<h2 id="sec-4">Initial Setup</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Barebone Emacs ist zwar gut und schön aber da Emacs freie Software ist gibt es
+viele nützliche Erweiterungen die man sich installieren kann. Das geht ganz
+einfach über den integrierten Paketmanager. Oder aber man nutzt eines der vielen
+Starter-Kits bei denen schon viele Erweiterungen vorinstalliert sind und ein
+Reihe von Emacs Konfigurationen angepasst worden sind.
+</p>
+<p>
+Ich finde die Starter-Kits sind eine gute Sache, aber auf Lange Sicht ist es
+wohl besser die Konfiguration selbst vorzunehmen, damit man lernt wie Emacs
+funktioniert und seine eigenen Konfigurationswünsche umsetzen kann.
+</p>
+<p>
+Hier sind drei bekannte Starter-Kits:
+</p>
+<ul class="org-ul">
+<li><a href="https://github.com/eschulte/emacs24-starter-kit/">Emacs 24 Starter Kit </a>
+</li>
+<li><a href="https://github.com/bbatsov/prelude">Emacs Prelude</a>
+</li>
+<li><a href="https://github.com/syl20bnr/spacemacs">Spacemacs</a>
+</li>
+</ul>
+<p>
+Wer lieber kein Starter-Kit Nutzen möchte der sollte sich zunächst den
+Paketmanager konfigurieren um Erweiterungen installieren zu können. Dazu muss
+man im <code>HOME</code> Verzeichnis die Konfigurationsdatei <code>.emacs</code> erstellen und sie mit
+folgenden Inhalt füllen:
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(<span style="color: #F0DFAF; font-weight: bold;">require</span> '<span style="color: #BFEBBF;">package</span>)
+(setq package-enable-at-startup nil)
+(package-initialize)
+
+(add-to-list 'package-archives
+             '(<span style="color: #CC9393;">"melpa"</span> .
+               <span style="color: #CC9393;">"http://melpa.milkbox.net/packages/"</span>) t)
+
+(add-to-list 'package-archives
+             '(<span style="color: #CC9393;">"marmalade"</span> . <span style="color: #CC9393;">"http://marmalade-repo.org/packages/"</span>))
+</pre>
 </div>
+<p>
+Die Datei wird beim starten von Emacs geladen. Damit hat man zwei der
+populärsten Hoster von Emacs Paketen hinzugefügt.
+</p>
+<p>
+Alternativ kann man auch die Datei <code>.init.el</code> im Verzeichnis <code>~/.emacs.d</code> nutzen,
+falls man keine Konfigurationsdateien auf dem Top Level des <code>HOME</code> Verzeichnisses
+mag.
+</p>
+<p>
+Wie man Pakete installiert und konfiguriert beschreibe ich in den kommenden Artikeln.
+</p>
+</div>
+</div>
+<div class="outline-2" id="outline-container-sec-5">
+<h2 id="sec-5">Wie lerne ich mehr über Emacs?</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Abonniere meinen Blog Feed ;) Ich plane noch viel Beiträge über Emacs zu
+schreiben. Wer nicht warten möchte und des Englischen mächtig ist, für den
+stehen eine Reihe von Resourcen aus dem Netz zur Verfügung:
+</p>
+<ul class="org-ul">
+<li><a href="http://www.youtube.com/playlist?list=PLxj9UAX4Em-IiOfvF2Qs742LxEK4owSkr">Videos</a>
+</li>
+<li><a href="http://emacslife.com/">Text</a>
+</li>
+<li><a href="http://www.ibm.com/developerworks/views/aix/libraryview.jsp?search_by=emacs+editing+environment">Text</a>
+</li>
+<li><a href="http://david.rothlis.net/emacs/howtolearn.html">Text</a>
+</li>
+<li><a href="https://tuhdo.github.io/index.html">Text</a>
+</li>
+</ul>
+<img alt="real programmers use emacs" src="static/img/real_programmers.png"/>
+</div>
+</div>
+
                 </article>
+                <!-- { if loop.length == 1 %} -->
+                <!--     { include 'pagination.html' %} -->
+                <!-- { endif %} -->
             </aside><!-- /#featured -->
+            
                 <section id="content" class="body">
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+            
+        
+        
+        
+    
 
+        
+        
+            
             <li><article class="hentry">
                 <header>
-                    <h1><a href="./emacs-rocks-part-1.html" rel="bookmark"
-                           title="Permalink to Emacs Rocks - Part 1">Emacs Rocks - Part 1</a></h1>
+                    <h1><a href="./my-sicp-journey.html" rel="bookmark"
+                           title="Permalink to My SICP journey">My SICP journey</a></h1>
                 </header>
 
                 <div class="entry-content">
-<footer class="post-info">
-        <!-- <abbr class="published" title="2015-05-20T21:28:00+02:00"> -->
-                <!-- Published: 20.5.2015 -->
-        <!-- </abbr> -->
-        <!--  -->
-
-<!-- <p>In <a href="./category/emacs.html">Emacs</a>. </p> -->
-
-</footer><!-- /.post-info -->                Eine Einführung zu Emacs, mit Anwendungsbeispielen, Lernressourcen und Installationsanleitung.
-                <a class="readmore" href="./emacs-rocks-part-1.html">read more</a>
-                </div><!-- /.entry-content -->
+                    Beschreibung von Structure and Interpretation of Computing Programs mit Angabe nützlicher Lernquellen zu dem Buch.
+                <a class="readmore" href="./my-sicp-journey.html">read more</a>
+                </div>
             </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="./emacs-rocks-part-2.html" rel="bookmark"
-                           title="Permalink to Emacs Rocks - Part 2">Emacs Rocks - Part 2</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <!-- <abbr class="published" title="2015-05-13T03:46:00+02:00"> -->
-                <!-- Published: 13.5.2015 -->
-        <!-- </abbr> -->
-        <!--  -->
-
-<!-- <p>In <a href="./category/emacs.html">Emacs</a>. </p> -->
-
-</footer><!-- /.post-info -->                Noch nicht veröffentlicht.
-                <a class="readmore" href="./emacs-rocks-part-2.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+        
+        
+            
                 </ol><!-- /#posts-list -->
-                <!-- <p class="paginator">
-    Page 1 / 1
-</p>
- -->
+            
+            <!-- { if articles_page.has_previous() or loop.length > 1 %} -->
+                <!-- { include 'pagination.html' %} -->
+            <!-- { endif %} -->
+            
                 </section><!-- /#content -->
-        <section id="extras" class="body">
-        </section><!-- /#extras -->
+            
+        
+    
+
+
 
         <footer id="contentinfo" class="body">
             <address id="about" class="vcard body">
@@ -273,12 +327,22 @@ python -c <span style="color: #CC9393;">"import sys;import codecs;sys.stdout.wri
 (rot13 <span style="color: #CC9393;">"pyrzfb@cbfgrb.qr"</span>)
 </pre>
 </div>
-                <!-- <p>Dieser Blog ist mit <a href="http://getpelican.com/">Pelican</a>, generiert. Pelican ist ein Static Site Generator, geschrieben in <a href="http://python.org">Python</a>.</p> -->
-                <!-- <p>Das Theme dieser Seite ist eine angepasste Version des Themes von <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a></p> -->
-            </address><!-- /#about -->
+
+            </address>
 
 
-        </footer><!-- /#contentinfo -->
-
+        </footer>
+        
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
